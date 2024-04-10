@@ -15,7 +15,8 @@ class Idea extends Model
         'updated_at'
     ];
 
-    public function comments(){
+    public function comments()
+    {
         return $this->hasMany(Comment::class);
     }
 }
